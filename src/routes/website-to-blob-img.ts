@@ -41,7 +41,7 @@ export default async function websiteToBlobImg(fastify: FastifyInstance) {
     const contentType = SCREENSHOT_FORMAT_TO_MIME[format];
 
     try {
-      const browser = await getBrowser({ width, height });
+      const browser = await getBrowser({ width: Number(width), height: Number(height) });
 
       const page = await browser.newPage();
 
