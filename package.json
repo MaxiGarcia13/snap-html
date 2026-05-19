@@ -32,6 +32,7 @@
     "install:chrome": "npx puppeteer browsers install chrome"
   },
   "dependencies": {
+    "@fastify/cors": "^11.2.0",
     "@fastify/rate-limit": "^10.3.0",
     "@sparticuz/chromium": "^148.0.0",
     "fastify": "^5.8.5",
