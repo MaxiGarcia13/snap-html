@@ -1,7 +1,7 @@
 {
   "name": "snap-website",
   "type": "module",
-  "version": "0.7.0",
+  "version": "0.6.2",
   "description": "API to capture screenshots of websites using Puppeteer",
   "author": "Maximiliano Garcia Mortigliengo",
   "license": "ISC",
@@ -26,7 +26,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node --env-file-if-exists .env dist/server.js",
-    "dev": "tsc watch src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "install:chrome": "npx puppeteer browsers install chrome"
@@ -42,7 +42,6 @@
     "@maxigarcia/eslint-config": "^1.5.0",
     "@types/node": "^22.15.21",
     "puppeteer": "^24.43.1",
-    "tsx": "^4.22.3",
     "typescript": "^6.0.3"
   }
 }
