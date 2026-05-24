@@ -8,7 +8,7 @@ const fastify = Fastify({
 });
 
 await fastify.register(rateLimit, {
-  max: 10,
+  max: 20,
   timeWindow: '1 minute',
 });
 
